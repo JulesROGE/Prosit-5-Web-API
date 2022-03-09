@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Advent Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*display: flex;
+    flex-direction: column;*/
+    
+}
+
+.connect {
+    float: right;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+
+.titre{
+    padding-left: 2%;
+    background-color: lightgrey;
+}
+
+.liens{
+    
+    background-color: black ;
+    
+        
+}
+
+.liens a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: auto;
+    padding: 2%;
+    
+  }
+
+select {
+    width: auto;
+    padding:0;
+    /*border: ;*/
+    border: radius 5%;
+    border-style:inherit;
+    border-color: none;
+    background-color: rgb(252, 224, 213) ;
+    color: black;
+    }
+
+
+.fournisseur	
+    {
+        display: flex;
+        border: 1px red;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        overflow: auto;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text
+    {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border-color: rgb(252, 224, 213);
+    border-style:solid;
+    background-color: rgb(252, 224, 213);
+    color: black;
+    
+    }
+
+.region{
+    background-color: rgb(207, 184, 174);
+    border-color: rgb(207, 184, 174);
+}
+
+.inputState[type=text]
+    {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border-color: rgb(252, 224, 213);
+    border-style:solid;
+    
+    
+    background-color: rgb(252, 224, 213);
+    color: black;
+    }
+
+fieldset{
+    border-color:red;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+legend{
+    color: red;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.pro{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+.gif{
+    display: none;
+    padding-bottom: 5px;
+}
+
+span{
+    color: #FF0000;
+}
