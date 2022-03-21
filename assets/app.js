@@ -1,7 +1,6 @@
 
 const url = (postal) => `https://geo.api.gouv.fr/communes?codePostal=${postal}&fields=nom,code,codesPostaux,codeDepartement,region&format=json&geometry=centre`
 
-
 //-----Afficher-----
 
 function afficher(){
@@ -31,7 +30,6 @@ $(document).ready(()=>{
     })
 
     //-----Remplissage ville-----
-
 
     $("#cp").on("input",(event)=>{
         if(event.target.value.length == 5){
