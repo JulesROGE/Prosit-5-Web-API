@@ -30,10 +30,7 @@ body{
 }
 
 .liens{
-    
     background-color: black ;
-    
-        
 }
 
 .liens a {
@@ -43,7 +40,7 @@ body{
     text-decoration: none;
     font-size: auto;
     padding: 2%;
-  }
+}
 
 select {
     width: auto;
