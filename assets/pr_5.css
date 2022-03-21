@@ -43,7 +43,6 @@ body{
     text-decoration: none;
     font-size: auto;
     padding: 2%;
-    
   }
 
 select {
@@ -55,7 +54,7 @@ select {
     border-color: none;
     background-color: rgb(252, 224, 213) ;
     color: black;
-    }
+}
 
 
 .fournisseur	
@@ -70,7 +69,7 @@ select {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+}
 
 .form {
     display: flex;
@@ -88,7 +87,7 @@ select {
     background-color: rgb(252, 224, 213);
     color: black;
     
-    }
+}
 
 .region{
     background-color: rgb(207, 184, 174);
@@ -106,7 +105,7 @@ select {
     
     background-color: rgb(252, 224, 213);
     color: black;
-    }
+}
 
 fieldset{
     border-color:red;
