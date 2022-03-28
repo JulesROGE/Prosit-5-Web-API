@@ -1,181 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" href="./assets/img/pptico.ico" />
-        <title>Prosit 5</title>
-        <link rel="stylesheet" href="./assets/pr_5.css">
-        <!--Commentaire-->
-        <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
-        <script src="./assets/app.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="titre">
-                <img class="connect" src="assets/img/LogoConnect2.png" alt="">
-                <h1>FACTURE</h1>
-                <p>Bienvenue chez Nous</p>
-            </div>
-            <div class="liens">
-                <nav>
-                    <a href="#Lien1">Lien1</a>
-                    <a href="#Lien2">Lien2</a>
-                    <a href="#Lien3">Lien3</a>
-                </nav>
-            </div>
-        </header>
-        <section>
-            <div class="fournisseur">
-                <h2>Formulaire</h2>
-                <fieldset class="fielform">
-                    <form class="form">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./assets/img/pptico.ico" />
+    <title>Prosit 5</title>
+    <link rel="stylesheet" href="./assets/pr_5.css">
+    <!--Commentaire-->
+    <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./assets/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="titre">
+            <img class="connect" src="assets/img/LogoConnect2.png" alt="">
+            <h1>FACTURE</h1>
+            <p>Bienvenue chez Nous</p>
+        </div>
+        <div class="liens">
+            <nav>
+                <a href="#Lien1">Lien1</a>
+                <a href="#Lien2">Lien2</a>
+                <a href="#Lien3">Lien3</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="fournisseur">
+            <h2>Formulaire</h2>
+            <fieldset class="fielform">
+                <form class="form">
                     <label for="fournisseur">Fournisseur :</label><br>
-                        <select name="fournisseur">
-                            <option value ="fournisseur1">Fournisseur 1</option>
-                            <option value ="fournisseur2">Fournisseur 2</option>
-                            <option value ="fournisseur3">Fournisseur 3</option>
-                            <option value ="fournisseur4">Fournisseur 4</option>
+                    <select name="fournisseur">
+                        <option value="fournisseur1">Fournisseur 1</option>
+                        <option value="fournisseur2">Fournisseur 2</option>
+                        <option value="fournisseur3">Fournisseur 3</option>
+                        <option value="fournisseur4">Fournisseur 4</option>
+                    </select>
+
+                    <h2>Formulaire</h2>
+
+                    <!--Radio Pro ou perso-->
+
+                    <div>
+                        <label class="properso" for="pro">Professionnel</label>
+                        <input type="radio" id="pro" name="usage" value="pro">
+
+                        <label class="properso" for="perso">Personnel</label>
+                        <input type="radio" id="perso" name="usage" value="perso">
+                    </div><br>
+
+                    <!--Champ n°TVA-->
+
+                    <div>
+                        <label class="notva" for="notva">N° TVA :</label><br>
+                        <input class="text" type="text" id="notva" name="notva" placeholder="00000">
+                    </div><br>
+
+                    <!--Champ prénom-->
+
+                    <div>
+                        <label class="prenom" for="prenom">Prénom :</label><br>
+                        <input class="text" type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                    </div><br>
+
+                    <!--Champ Nom-->
+
+                    <div>
+                        <label for="nom">Nom :</label><br>
+                        <input class="text" type="text" id="nom" name="nom" placeholder="Votre nom">
+                    </div><br>
+
+                    <!--Radio Sexe-->
+
+                    <div>
+                        <input class="sexe" type="radio" id="homme" name="sexe" value="homme">
+                        <label for="homme">Homme</label>
+
+                        <input class="sexe" type="radio" id="femme" name="sexe" value="femme">
+                        <label for="femme">Femme</label>
+
+                        <input class="sexe" type="radio" id="autre" name="sexe" value="autre">
+                        <label for="autre">Autre</label>
+                    </div><br>
+
+                    <!--Champ Email-->
+
+                    <div>
+                        <label class="email" for="email">Email :</label><br>
+                        <input class="text" type="text" id="email" name="email" placeholder="aled@email.fr">
+                    </div><br>
+
+                    <!--Champ Tel-->
+
+                    <div>
+                        <label class="telephone" for="telephone">N° Téléphone :</label><br>
+                        <input class="text" type="text" id="notel" name="telephone" placeholder="0123456789">
+                    </div><br>
+
+                    <!--Champ Adresse-->
+
+                    <div>
+                        <label class="adresse" for="adresse">Adresse :</label><br>
+                        <input class="text" type="text" id="adresse" name="adresse" placeholder="80 Rue ThinkPad">
+                    </div><br>
+
+                    <!--Champ Complément adresse-->
+
+                    <div>
+                        <label class="compadresse" for="compadresse"> Complément Adresse :</label><br>
+                        <input class="text" type="text" id="compadresse" name="compadresse"
+                            placeholder="N° bât ou étage">
+                    </div><br>
+
+                    <!--Champ cp-->
+
+                    <div>
+                        <label for="cp" class="cp">Code postal :</label><br>
+                        <input class="text" type="text" name="postal" id="cp" placeholder="18000">
+                    </div><br>
+
+                    <!--Champ Ville-->
+
+                    <div>
+                        <label for="ville" class="form-label">Ville :</label><br>
+                        <select id="ville" name="ville" class="form-select">
+                            <option selected>...</option>
                         </select>
-                    
-                        <h2>Formulaire</h2>
+                    </div><br>
 
-                        <!--Radio Pro ou perso-->
-        
-                        <div>
-                            <label class="properso" for="pro">Professionnel</label>
-                            <input type="radio" id="pro" name="usage" value="pro">
-        
-                            <label class="properso" for="perso">Personnel</label>
-                            <input type="radio" id="perso" name="usage" value="perso">
-                        </div><br>
-        
-                        <!--Champ n°TVA-->
-        
-                        <div>
-                            <label class="notva" for="notva">N° TVA :</label><br>
-                            <input class="text" type="text" id="notva" name="notva" placeholder="00000">
-                        </div><br>
-        
-                        <!--Champ prénom-->
-        
-                        <div>
-                            <label class="prenom" for="prenom">Prénom :</label><br>
-                            <input class="text" type="text" id="prenom" name="prenom" placeholder="Votre prénom">
-                        </div><br>
-        
-                        <!--Champ Nom-->
-        
-                        <div>
-                            <label for="nom">Nom :</label><br>
-                            <input class="text" type="text" id="nom" name="nom" placeholder="Votre nom">
-                        </div><br>
-        
-                        <!--Radio Sexe-->
-        
-                        <div>
-                            <input class="sexe" type="radio" id="homme" name="sexe" value="homme">
-                            <label for="homme">Homme</label>
-                                    
-                            <input class="sexe" type="radio" id="femme" name="sexe" value="femme">
-                            <label for="femme">Femme</label>
-                                    
-                            <input class="sexe" type="radio" id="autre" name="sexe" value="autre">
-                            <label for="autre">Autre</label>
-                        </div><br>
-        
-                        <!--Champ Email-->
-        
-                        <div>
-                            <label class="email" for="email">Email :</label><br>
-                            <input class="text" type="text" id="email" name="email" placeholder="aled@email.fr">
-                        </div><br>
-        
-                        <!--Champ Tel-->
-        
-                        <div>
-                            <label class="telephone" for="telephone">N° Téléphone :</label><br>
-                            <input class="text" type="text" id="notel" name="telephone" placeholder="0123456789">
-                        </div><br>
-        
-                        <!--Champ Adresse-->
-        
-                        <div>
-                            <label class="adresse" for="adresse">Adresse :</label><br>
-                            <input class="text" type="text" id="adresse" name="adresse" placeholder="80 Rue ThinkPad">
-                        </div><br>
-        
-                        <!--Champ Complément adresse-->
-        
-                        <div>
-                            <label class="compadresse" for="compadresse"> Complément Adresse :</label><br>
-                            <input class="text" type="text" id="compadresse" name="compadresse" placeholder="N° bât ou étage">
-                        </div><br>
-        
-                        <!--Champ cp-->
-        
-                        <div>
-                            <label for="cp" class="cp">Code postal :</label><br>
-                            <input class="text" type="text" name="postal" id="cp" placeholder="18000">
-                        </div><br>
-        
-                        <!--Champ Ville-->
-        
-                        <div>
-                            <label for="ville" class="form-label">Ville :</label><br>
-                            <select id="ville" name="ville" class="form-select">
-                              <option selected>...</option>
-                            </select>
-                        </div><br>
-        
-                        <!--Champ Region-->
-        
-                        <div>
-                            <label for="ville">Region :</label><br>
-                            <input class="text region" type= "text" name="region" id="region" placeholder="..." disabled/>
-                        </div><br>
-        
-                        <!--Champ cb-->
-        
-                        <div>
-                            <label class="password" for="password">Mot de passe :</label><br>
-                            <input class="text" type="password" id="cb" name="password"><br><br>
-                        </div>
-        
-                        <!--Checkbox CGV-->
-        
-                        <div>
-                            <input class="cgv" type="checkbox" onclick='check()' id="autre" name="cgv" value="">
-                            <label for="cgv">J'accèpte les conditions de vente <span>*</span></label><br><br>
-                        </div>
-        
-                        <!--Gif-->
-        
-                        <div class="gif">
-                            <div class="tenor-gif-embed" data-postid="23624159" data-share-method="host" data-aspect-ratio="1.89349" data-width="100%"><a href="https://tenor.com/view/vilebrequin-vilbrequin-sylvain-pierre-sylvain-vilebrequin-gif-23624159">Vilebrequin Vilbrequin GIF</a>from <a href="https://tenor.com/search/vilebrequin-gifs">Vilebrequin GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-                            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/Skwjj4fK23s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-                            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/VCgsrJgJG_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-        
-                        </div>
+                    <!--Champ Region-->
 
-                        <!--Ensemble des boutons-->
-            
-                        <div>
-                            <button class="button" type="submit" id="valider" value="Valider">Valider</button>
-                            <!--<button class="button" type="button" onclick=window.location='confirm.html' id="valider" value="Valider">Valider</button>-->
-                            <button class="button" type="reset" onclick='window.location.reload(false)' value="Réinitialiser">Réinitialiser</button>
-                            <button class="button" type="button" onclick='afficher()' id="btn" value="Apparaitre">Apparaitre</button>
-                            <button class="button" type="button" onclick='cacher()' id="btn2" value="Cacher">Cacher</button>
-                        </div>
-        
-                        <script src="./assets/app.js"></script>
-                    </form>
-                </fieldset>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="droits">
-                © COPYRIGHT 2022 - Tous Droits Réservés
-            </div>
-        </footer>
-    </body>
+                    <div>
+                        <label for="ville">Region :</label><br>
+                        <input class="text region" type="text" name="region" id="region" placeholder="..." disabled />
+                    </div><br>
+
+                    <!--Champ cb-->
+
+                    <div>
+                        <label class="password" for="password">Mot de passe :</label><br>
+                        <input class="text" type="password" id="cb" name="password"><br><br>
+                    </div>
+
+                    <!--Checkbox CGV-->
+
+                    <div>
+                        <input class="cgv" type="checkbox" onclick='check()' id="autre" name="cgv" value="">
+                        <label for="cgv">J'accèpte les conditions de vente <span>*</span></label><br><br>
+                    </div>
+
+                    <!--Gif-->
+
+                    <div class="gif">
+                        <div class="tenor-gif-embed" data-postid="23624159" data-share-method="host"
+                            data-aspect-ratio="1.89349" data-width="100%"><a
+                                href="https://tenor.com/view/vilebrequin-vilbrequin-sylvain-pierre-sylvain-vilebrequin-gif-23624159">Vilebrequin
+                                Vilbrequin GIF</a>from <a href="https://tenor.com/search/vilebrequin-gifs">Vilebrequin
+                                GIFs</a></div>
+                        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/Skwjj4fK23s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/VCgsrJgJG_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+                    </div>
+
+                    <!--Ensemble des boutons-->
+
+                    <div>
+                        <button class="button" type="submit" id="valider" value="Valider">Valider</button>
+                        <!--<button class="button" type="button" onclick=window.location='confirm.html' id="valider" value="Valider">Valider</button>-->
+                        <button class="button" type="reset" onclick='window.location.reload(false)'
+                            value="Réinitialiser">Réinitialiser</button>
+                        <button class="button" type="button" onclick='afficher()' id="btn"
+                            value="Apparaitre">Apparaitre</button>
+                        <button class="button" type="button" onclick='cacher()' id="btn2" value="Cacher">Cacher</button>
+                    </div>
+
+                    <script src="./assets/app.js"></script>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="droits">
+            © COPYRIGHT 2022 - Tous Droits Réservés
+        </div>
+    </footer>
+</body>
+
 </html>
