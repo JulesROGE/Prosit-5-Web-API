@@ -3,45 +3,45 @@ const url = (postal) => `https://geo.api.gouv.fr/communes?codePostal=${postal}&f
 
 //-----Afficher-----
 
-function afficher(){
+function afficher() {
     $(".gif").css("display", "block")
 }
-    
-function cacher(){
+
+function cacher() {
     $(".gif").css("display", "none")
 }
 
-$(document).ready(()=>{
-    
+$(document).ready(() => {
+
     //-----CGV-----
-    
+
     document.getElementById("valider").disabled = true;
-    
-    $('.cgv').click(function(){
-        if($('.cgv:checked').length == 1) {
+
+    $('.cgv').click(function () {
+        if ($('.cgv:checked').length == 1) {
             document.getElementById("valider").disabled = false;
         }
     })
-    
-    $('.cgv').click(function(){
-        if($('.cgv:checked').length == 0) {
+
+    $('.cgv').click(function () {
+        if ($('.cgv:checked').length == 0) {
             document.getElementById("valider").disabled = true;
         }
     })
 
     //-----Remplissage ville-----
 
-    $("#cp").on("input",(event)=>{
-        if(event.target.value.length == 5){
-            $.get(url(event.target.value), (data) =>{
+    $("#cp").on("input", (event) => {
+        if (event.target.value.length == 5) {
+            $.get(url(event.target.value), (data) => {
                 $("#ville").empty()
-                data.map((val) =>{
+                data.map((val) => {
                     $("#ville").append(`<option>${val.nom}</option>`)
                     $("#region").val(val.region.nom)
                 })
             })
         }
-        else{
+        else {
             $("#ville").empty()
             $("#ville").append(`<option selected>...</option>`)
             $("#region").val(`...`)
